@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtruc = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtcliente = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtproducto = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.txtcliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtruc = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.txtcantidad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtproducto = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,12 +54,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txttotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.itembindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itembindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,6 +81,64 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(242, 37);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtcliente
+            // 
+            this.txtcliente.Location = new System.Drawing.Point(55, 39);
+            this.txtcliente.Name = "txtcliente";
+            this.txtcliente.Size = new System.Drawing.Size(180, 20);
+            this.txtcliente.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Cliente:";
+            // 
+            // txtruc
+            // 
+            this.txtruc.Location = new System.Drawing.Point(315, 11);
+            this.txtruc.Name = "txtruc";
+            this.txtruc.Size = new System.Drawing.Size(111, 20);
+            this.txtruc.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(278, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "RUC";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(55, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(217, 20);
+            this.dateTimePicker1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fecha:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button3);
@@ -97,103 +155,14 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // label1
+            // button3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(55, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(217, 20);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(278, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "RUC";
-            // 
-            // txtruc
-            // 
-            this.txtruc.Location = new System.Drawing.Point(315, 11);
-            this.txtruc.Name = "txtruc";
-            this.txtruc.Size = new System.Drawing.Size(111, 20);
-            this.txtruc.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Cliente:";
-            // 
-            // txtcliente
-            // 
-            this.txtcliente.Location = new System.Drawing.Point(55, 39);
-            this.txtcliente.Name = "txtcliente";
-            this.txtcliente.Size = new System.Drawing.Size(180, 20);
-            this.txtcliente.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(242, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Producto:";
-            // 
-            // txtproducto
-            // 
-            this.txtproducto.Location = new System.Drawing.Point(56, 12);
-            this.txtproducto.Name = "txtproducto";
-            this.txtproducto.Size = new System.Drawing.Size(173, 20);
-            this.txtproducto.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(242, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Precio:";
-            // 
-            // txtprecio
-            // 
-            this.txtprecio.Location = new System.Drawing.Point(55, 39);
-            this.txtprecio.Name = "txtprecio";
-            this.txtprecio.Size = new System.Drawing.Size(76, 20);
-            this.txtprecio.TabIndex = 4;
+            this.button3.Location = new System.Drawing.Point(315, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(111, 46);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Agregar Factura";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // txtcantidad
             // 
@@ -211,14 +180,46 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Cantidad:";
             // 
-            // button3
+            // txtprecio
             // 
-            this.button3.Location = new System.Drawing.Point(315, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 46);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Agregar Factura";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txtprecio.Location = new System.Drawing.Point(55, 39);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(76, 20);
+            this.txtprecio.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Precio:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(242, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // txtproducto
+            // 
+            this.txtproducto.Location = new System.Drawing.Point(56, 12);
+            this.txtproducto.Name = "txtproducto";
+            this.txtproducto.Size = new System.Drawing.Size(173, 20);
+            this.txtproducto.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Producto:";
             // 
             // dataGridView1
             // 
@@ -293,10 +294,6 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Total:";
             // 
-            // itembindingSource
-            // 
-            this.itembindingSource.DataSource = typeof(NorthWind.Entity.ItemBE);
-            // 
             // itemDataGridViewTextBoxColumn
             // 
             this.itemDataGridViewTextBoxColumn.DataPropertyName = "Item";
@@ -330,6 +327,10 @@
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
             this.totalDataGridViewTextBoxColumn.ReadOnly = true;
             this.totalDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // itembindingSource
+            // 
+            this.itembindingSource.DataSource = typeof(NorthWind.Entity.ItemBE);
             // 
             // frmDocumento
             // 
